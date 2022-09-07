@@ -22,6 +22,57 @@ body{
 
 .body{
     background-color: rgba(128, 128, 128, 0.267);
+    display: flex;
+    padding: 24px;
+    padding-right: 32px;
+    gap: 16px;
+}
+
+.projects-section{
+    flex: 3;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    height: 100%;
+}
+
+.project{
+    background-color: white;
+    border-radius: 16px;
+    margin: 16px;
+    margin-left: 0;
+    padding: 16px;
+}
+
+h4{
+    margin: 0;
+}
+
+.right-body{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.announcements,
+.trending{
+    margin-top: 8px;
+    margin-bottom: 32px;
+    background-color: white;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.announcements{
+    flex: 3;
+}
+
+.trending{
+    flex: 2;
 }
 
 .sidebar-section{
@@ -35,22 +86,28 @@ body{
 .head{
     padding-top: 16px;
     display: grid;
-    grid-template-columns: 6fr 100px 100px 100px;
+    grid-template-columns: 6fr 300px;
     grid-template-rows: repeat(2, 74px);
     align-items: center;
+    padding: 8px;
 }
 
 button{
     background-color: rgba(34, 128, 252, 0.795);
     border-radius: 16px;
-    margin: 20px 20px;
     color: white;
     font-weight: bold;
+    padding: 4px 8px;
 }
 
 img{
     width: 60px;
     height: 60px;
+}
+
+.top-img,
+.img,
+.icon{
     border-radius: 50%;
 }
 
@@ -66,6 +123,14 @@ img{
     width: 25px;
 }
 
+.top-r,
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+}
+
 .main{
     width: 35px;
     height: 35px;
@@ -75,6 +140,28 @@ img{
     justify-self: end;
 }
 
+.user{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
 .username{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+h5{
+    margin: 0;
+    font-size: 16px;
+}
+
+.search-button{
+    border-radius: 50%;
+    background-color: rgba(40, 121, 226, 0.473);
+    height: 40px;
+    width: 40px;
 }
