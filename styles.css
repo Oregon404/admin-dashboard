@@ -41,11 +41,20 @@ body{
 }
 
 .project{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: white;
     border-radius: 16px;
     margin: 16px;
     margin-left: 0;
     padding: 16px;
+}
+
+.project-icons{
+    display: flex;
+    justify-content: end;
+    gap: 16px;
 }
 
 h4{
@@ -69,10 +78,21 @@ h4{
 
 .announcements{
     flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
 }
 
 .trending{
     flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.trending-item{
+    display: flex;
+    gap: 16px;
 }
 
 .sidebar-section{
@@ -164,4 +184,10 @@ h5{
     background-color: rgba(40, 121, 226, 0.473);
     height: 40px;
     width: 40px;
+}
+
+p{
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
